@@ -89,7 +89,7 @@ body{
 }
 .shake-vertical {
    
-	-webkit-animation: shake-vertical 6s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+	-webkit-animation: shake-vertical 6s cubic-bezier(0.455, 0.030, 0.515, 0.955)  infinite both;
 	        animation: shake-vertical 6s cubic-bezier(0.455, 0.030, 0.515, 0.955)  infinite both;
 }
 @keyframes shake-vertical {
@@ -828,7 +828,7 @@ body{
     }
 
     .nav-content ul{
-        margin-top:25px ;
+        margin-top:2px ;
     }
     .nav-content ul li a{
         font-size: 21px;
