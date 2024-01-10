@@ -10,7 +10,7 @@ openMenu.addEventListener('click', () => {
     navContent.classList.add('open');
     closeMenu.classList.add('open');
     openMenu.classList.add('close');
-    animateMenu.classList.add('slide-in-right');
+    menuAnimate ();
 });
 
 closeMenu.addEventListener('click', () => {
@@ -19,8 +19,9 @@ closeMenu.addEventListener('click', () => {
     closeMenu.classList.remove('open');
 })
 
-
-
+function menuAnimate () {
+    animateMenu.classList.add('slide-in-right');
+}
 
 
 
