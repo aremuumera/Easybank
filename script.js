@@ -6,22 +6,34 @@ const animateMenu = document.querySelector('.slide-in-right');
 
 
 
-openMenu.addEventListener('click', () => {
+function OpenMenuValidation ()  {
     navContent.classList.add('open');
-    closeMenu.classList.add('open');
-    openMenu.classList.add('close');
-    menuAnimate ();
-});
+    navContent.classList.add('slide-in-right');
+    closeMenu.style.display  = 'block';
+    openMenu.style.display = 'none';
+};
+openMenu.addEventListener('click', OpenMenuValidation);
 
-closeMenu.addEventListener('click', () => {
-    navContent.classList.add('close');
-    openMenu.classList.add('open');
-    closeMenu.classList.remove('open');
-})
 
-function menuAnimate () {
-    animateMenu.classList.add('slide-in-right');
-}
+function closeMenuValidation ()  {
+    navContent.classList.remove('open');
+    // closeMenu.classList.remove('open');
+    // openMenu.classList.add('close');
+    closeMenu.style.display  = 'none';
+    openMenu.style.display = 'block';
+   
+};
+closeMenu.addEventListener('click', closeMenuValidation);
+
+
+
+// if(openMenu.style.display === 'block' && OpenMenuValidation ()) {
+//     closeMenu.classList.add('open');
+//     openMenu.classList.remove('open');
+// }else if (closeMenu.style.display === 'block'  && closeMenuValidation()){
+//     closeMenu.classList.remove('open');
+//     openMenu.classList.add('open');
+// }
 
 
 
