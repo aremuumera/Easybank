@@ -17,8 +17,6 @@ openMenu.addEventListener('click', OpenMenuValidation);
 
 function closeMenuValidation ()  {
     navContent.classList.remove('open');
-    // closeMenu.classList.remove('open');
-    // openMenu.classList.add('close');
     closeMenu.style.display  = 'none';
     openMenu.style.display = 'block';
    
@@ -27,13 +25,7 @@ closeMenu.addEventListener('click', closeMenuValidation);
 
 
 
-// if(openMenu.style.display === 'block' && OpenMenuValidation ()) {
-//     closeMenu.classList.add('open');
-//     openMenu.classList.remove('open');
-// }else if (closeMenu.style.display === 'block'  && closeMenuValidation()){
-//     closeMenu.classList.remove('open');
-//     openMenu.classList.add('open');
-// }
+
 
 
 
